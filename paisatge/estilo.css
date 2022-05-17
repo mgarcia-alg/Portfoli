@@ -1,0 +1,153 @@
+body{
+  background-color: black;
+ animation-name: cielo;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+@keyframes cielo {
+ from {
+   background-color: black;
+ }
+ to {
+   background-color: #4169E1;
+ }
+}
+
+
+#cesped{
+  width: auto;
+  height: 400px;
+  background: green;
+  position: relative;
+  top: 450px;
+  z-index: 10;
+}
+
+#nucleo{
+  background: #DAF7A6;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: -410px;
+  left: 560px;
+
+}
+
+
+@keyframes floripondio {
+  0% {transform: rotate(0deg); }
+  100% {transform: rotate(360deg);}
+}
+
+#floripondio{
+  background: #DAF7A6;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 500px;
+  left: 565px;
+  animation: floripondio 4s infinite linear;
+
+}
+
+#tallo{
+  position: relative;
+  background: #237D3E;
+  height: 300px;
+  width: 10px;
+  top:510px;
+  left: 580px;
+  z-index: -1;
+
+}
+
+.petalo{
+  background: #DAF7A6;
+  position: relative;
+  clip-path: polygon(50% 99%, 53% 68%, 63% 55%, 53% 63%, 59% 54%, 53% 57%, 55% 50%, 51% 56%, 48% 50%, 47% 55%, 38% 54%, 47% 60%, 39% 60%, 47% 64%, 47% 70%);
+  width: 150px;
+  height: 150px;
+
+}
+
+#uno{
+  top:335px;
+  left:330px;
+}
+
+#dos{
+  top: -580;
+  left: -430;
+}
+
+#tres{
+  top: -555;
+  left: -320;
+  transform: rotate(85deg);
+}
+
+#cuatro{
+  top:-880px;
+  left:30px;
+  transform: rotate(85deg);
+}
+
+.tori{
+  width: 100px;
+  height: 100px;
+  background-color: #D2691E;
+  position: absolute;
+  left: 1353px;
+  top: 390px;
+clip-path: polygon(24% 94%, 38% 94%, 39% 71%, 56% 71%, 57% 93%, 72% 93%, 61% 58%, 80% 57%, 90% 47%, 78% 50%, 60% 49%, 58% 38%, 75% 35%, 82% 29%, 49% 35%, 16% 30%, 21% 36%, 40% 39%, 40% 49%, 23% 50%, 9% 45%, 19% 56%, 34% 57%);
+}
+
+.camino{
+  width: 700px;
+  height: 450px;
+  background-color: #556B2F;
+  position: absolute;
+  left: 1050px;
+  top: 410px;
+clip-path: polygon(24% 100%, 35% 100%, 35% 81%, 35% 68%, 38% 56%, 43% 49%, 47% 43%, 55% 40%, 59% 30%, 60% 21%, 49% 21%, 48% 29%, 44% 37%, 39% 40%, 33% 46%, 29% 55%, 27% 64%, 25% 74%, 24% 84%, 23% 93%);
+}
+
+
+.montaña{
+  width: 700px;
+  height: 650px;
+  background-color: #004400;
+  position: absolute;
+  left: 950px;
+  top: 300px;
+  clip-path: polygon(51% 35%, 68% 23%, 82% 34%, 87% 51%, 93% 70%, 100% 100%, 19% 100%, 22% 87%, 34% 72%, 39% 48%);
+
+}
+
+.sol {
+  width: 150px;
+  height: 150px;
+  background: yellow;
+  position: relative;
+  left: 1200px;
+  top: -300px;
+  border-radius: 100%;
+  animation-name: sol ;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes sol {
+  from {
+    transform: rotate(360deg);
+    top: 100px;
+  }
+  to {
+    transform: rotate(0deg);
+    top: -800px;
+  }
+}
